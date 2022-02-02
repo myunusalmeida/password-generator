@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Muhammad Yunus Almeida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h2 class="title">Password Generator</h2>
+        <div class="result">
+            <textarea name="" id="result" cols="30" rows="2"></textarea>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Panjang Password</label>
+                <input type="number" id="passwordLength" min="4" max="30" value="8" />
+            </div>
+            <div class="setting">
+                <label for="uppercase">Huruf Kapital</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label for="lowercase">Huruf Kecil</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label for="number">Angka</label>
+                <input type="checkbox" id="number" checked />
+            </div>
+            <div class="setting">
+                <label for="symbol">Simbol</label>
+                <input type="checkbox" id="symbol" checked />
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-generate" id="generateBtn">Generate</button>
+            <button class="btn" id="clipboardBtn">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
